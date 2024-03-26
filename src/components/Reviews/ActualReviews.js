@@ -37,7 +37,7 @@ const ReviewCard = ({ avatar, name, stars, review }) => {
       {review.length > 100 && (
         <button
           onClick={() => setShowModal(true)}
-          className="text-blue-500 hover:text-blue-700 focus:outline-none"
+          className="text-blue-500 hover:text-[#00008B] focus:outline-none"
         >
           Read more
         </button>
@@ -49,7 +49,7 @@ const ReviewCard = ({ avatar, name, stars, review }) => {
               <h2 className="text-lg font-semibold">{name}</h2>
               <button
                 onClick={() => setShowModal(false)}
-                className="hover:text-gray-800 focus:outline-none"
+                className="hover:text-[#00008B] focus:outline-none"
               >
                 Close
               </button>

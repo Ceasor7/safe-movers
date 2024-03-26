@@ -49,7 +49,7 @@ const ReviewSection = () => {
     >
       <h3 className=" uppercase tracking-[5px] text-2xl">Reviews</h3>
 
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#570987]/80">
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#00008B]/80">
         <div className="flex flex-col sm:flex-row">
           <div className="sm:w-1/3 mb-5">
             <p className="text-4xl mr-7 tracking-widest">

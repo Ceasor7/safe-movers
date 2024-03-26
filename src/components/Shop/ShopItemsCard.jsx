@@ -19,7 +19,7 @@ const ShopItemsCard = ({
         alt="product image"
         className="w-auto h-auto rounded-2xl"
       />
-      <h1 className="bg-[#570987] text-white text-center py-4 font-bold">
+      <h1 className="bg-[#00008B] text-white text-center py-4 font-bold">
         {title}
       </h1>
       <p className="text-2xl text-gray-700 mb-3 my-3 mx-7">{price}</p>

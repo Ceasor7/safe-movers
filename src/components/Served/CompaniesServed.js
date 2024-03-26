@@ -54,7 +54,7 @@ export default function CompaniesServed() {
         <p>
           We have Served over
           <br />
-          <span className="text-[#570987] sm:text-4xl text-2xl font-bold">
+          <span className="text-[#00008B] sm:text-4xl text-2xl font-bold">
             200
           </span>{' '}
           <span className="sm:text-4xl text-2xl font-bold">Companies</span>

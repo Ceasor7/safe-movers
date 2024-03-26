@@ -1,11 +1,11 @@
 import LandingSection from '@/components/Hero/LandingSection';
-import MovingWithUs from '@/components/Moving/MovingWithUs';
+import WhyChoose from '@/components/Moving/WhyChoose';
 import CompaniesServed from '@/components/Served/CompaniesServed';
 import GetMoving from '@/components/Services/GetMoving';
 import YoutubeVideo from '@/components/Youtube/YoutubeVideo';
 import Membership from '@/sections/Membership';
 import ReviewSection from '@/sections/ReviewSection';
-import ServicesCarousel from '@/sections/ServicesCarousel';
+import ServicesSection from '@/sections/ServicesSection';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <LandingSection />
       </section>
       <section>
-        <ServicesCarousel />
+        <ServicesSection />
       </section>
       <section>
         <ReviewSection />
@@ -25,7 +25,7 @@ export default function Home() {
       </section>
       <hr className="border-black mx-5 sm:mx-24" />
       <section>
-        <MovingWithUs />
+        <WhyChoose />
       </section>
       <section>
         <YoutubeVideo />

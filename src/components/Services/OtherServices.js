@@ -4,7 +4,7 @@ const OtherServices = () => {
   return (
     <div className="flex-col hidden sm:inline-flex justify-center ">
       <p className="text-center font-bold text-lg">Other Services</p>
-      <div className="text-[#570987] text-center rounded-xl shadow-xl bg-gray-50">
+      <div className="text-[#00008B] text-center rounded-xl shadow-xl bg-gray-50">
         <div className="py-3">
           <Link href="#">Residential House Movers in Kenya</Link>
         </div>

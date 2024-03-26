@@ -1,6 +1,8 @@
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { BsInstagram } from 'react-icons/bs';
+import { FaFacebook, FaSquareXTwitter, FaYoutube } from 'react-icons/fa6';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,8 +15,28 @@ export default function Navbar() {
     setIsMobileMenuOpen(false);
   };
 
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 100) {
+        // Change this value to adjust when the navbar should appear
+        setShowNavbar(true);
+      } else {
+        setShowNavbar(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex flex-row justify-between sm:justify-normal w-full p-6">
+    <nav className="flex fixed top-0 bg-white shadow-2xl z-10 flex-row justify-between sm:justify-normal w-full p-6">
       {!isMobileMenuOpen && (
         <div className="sm:ml-20">
           <img
@@ -40,6 +62,13 @@ export default function Navbar() {
         <NavLink href="/safe-movers-shop" onClick={closeMobileMenu}>
           Safe Movers Shop
         </NavLink>
+        <Link
+          href="/quote-form"
+          className=" px-5 py-3 text-white ml-36 rounded-xl bg-[#CC5500] hover:bg-[#00008B] hover:-translate-x-1.5 duration-400 "
+        >
+          {' '}
+          Get a Free Quote{' '}
+        </Link>
       </div>
       <div className="sm:hidden">
         {isMobileMenuOpen ? (
@@ -85,6 +114,35 @@ export default function Navbar() {
               Safe Movers Shop
             </NavLinkMobile>
           </div>
+          <div className="gap-5 flex flex-col items-center">
+            <div className="bg-[#CC5500] w-[250px] h-[1.5px]"></div>
+            <div className="flex flex-row gap-x-10">
+              <Link href="https://facebook/" target="_blank">
+                <FaFacebook
+                  size={25}
+                  className="text-[#CC5500] hover:-translate-y-1.5 duration-300"
+                />
+              </Link>
+              <Link href="https://facebook/" target="_blank">
+                <BsInstagram
+                  size={25}
+                  className="text-[#CC5500] hover:-translate-y-1.5 duration-300"
+                />
+              </Link>
+              <Link href="https://facebook/" target="_blank">
+                <FaSquareXTwitter
+                  size={25}
+                  className="text-[#CC5500] hover:-translate-y-1.5 duration-300"
+                />
+              </Link>
+              <Link href="https://facebook/" target="_blank">
+                <FaYoutube
+                  size={25}
+                  className="text-[#CC5500] hover:-translate-y-1.5 duration-300"
+                />
+              </Link>
+            </div>
+          </div>
         </div>
       )}
     </nav>
@@ -95,7 +153,7 @@ function NavLink({ href, children, onClick }) {
   return (
     <Link href={href} legacyBehavior>
       <a
-        className="ml-3 relative hover:text-[#570598] hover:border-b-2 hover:border-[#570598]"
+        className="ml-3 relative hover:text-[#00008B] hover:border-b-2 hover:border-[#CC5500]"
         onClick={onClick}
       >
         {children}

@@ -17,37 +17,37 @@ const Footer = () => {
         </div>
         <div>
           <p className="font-bold">Popular moving destinations in Kenya</p>
-          <p className="mt-1 text-black hover:text-[#570987] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <p className="mt-1 text-black hover:text-[#00008B] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Moving from Nairobi to Thika in one day
           </p>
-          <p className="mt-1 text-black hover:text-[#570987] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <p className="mt-1 text-black hover:text-[#00008B] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Moving from Nairobi to Diani
           </p>
-          <p className="mt-1 text-black hover:text-[#570987] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <p className="mt-1 text-black hover:text-[#00008B] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Moving from Nairobi to Naivasha
           </p>
-          <p className="mt-1 text-black hover:text-[#570987] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <p className="mt-1 text-black hover:text-[#00008B] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Moving to Nanyuki from Nairobi
           </p>
-          <p className="mt-1 text-black hover:text-[#570987] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <p className="mt-1 text-black hover:text-[#00008B] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Moving to Mombasa from Nairobi
           </p>
         </div>
         <div>
           <p className="font-bold">Popular international moving destinations</p>
-          <p className="mt-1 text-black hover:text-[#570987] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <p className="mt-1 text-black hover:text-[#00008B] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Moving from Dubai to Kenya
           </p>
-          <p className="mt-1 text-black hover:text-[#570987] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <p className="mt-1 text-black hover:text-[#00008B] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Moving From Kenya to Australia
           </p>
-          <p className="mt-1 text-black hover:text-[#570987] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <p className="mt-1 text-black hover:text-[#00008B] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Moving from Kenya to Canada
           </p>
-          <p className="mt-1 text-black hover:text-[#570987] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <p className="mt-1 text-black hover:text-[#00008B] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Moving from Kenya to Germany
           </p>
-          <p className="mt-1 text-black hover:text-[#570987] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <p className="mt-1 text-black hover:text-[#00008B] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Moving from Kenya to India
           </p>
         </div>
@@ -55,7 +55,7 @@ const Footer = () => {
           <img src="/arrow-up.svg" alt="Arrow up" className="w-14 h-14" />
         </div>
       </div>
-      <div className="bg-[#570987] w-full p-5 flex flex-col sm:flex-row text-white text-center">
+      <div className="bg-[#00008B] w-full p-5 flex flex-col sm:flex-row text-white text-center">
         <p>&copy; {currentYear} Safe Movers. All rights reserved.</p>
         <span className="sm:ml-36">
           <a
